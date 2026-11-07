@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#040918">
+<meta name="description" content="Contacta a David de MT Service para cotizar, resolver dudas o comenzar tu sitio web.">
+<title>Contacto | MT Service</title>
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<!-- ============ ENCABEZADO ============ -->
+<header class="header" id="header">
+  <div class="nav">
+    <a href="index.html" class="brand">
+      <img src="logo.png" class="logo-img" alt="MT Service">
+      <div><b>MT Service</b><small>BY DAVID</small></div>
+    </a>
+    <nav class="nav-links" id="navlinks">
+      <a href="index.html" data-page="index.html">Inicio</a>
+      <a href="servicios.html" data-page="servicios.html">Servicios</a>
+      <a href="nosotros.html" data-page="nosotros.html">Nosotros</a>
+      <a href="cotizador.html" data-page="cotizador.html">Cotizador</a>
+      <a href="sobre-david.html" data-page="sobre-david.html">Sobre David</a>
+      <a href="contacto.html" data-page="contacto.html">Contacto</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="cotizador.html" class="btn btn-ghost">Cotizar proyecto <svg class="ic" data-i="arrow-right"></svg></a>
+      <button class="burger" id="burger" aria-label="Abrir menú"><svg class="ic" data-i="menu"></svg></button>
+    </div>
+  </div>
+  <div class="mnav" id="mobile-menu">
+    <a href="index.html" data-page="index.html">Inicio</a>
+    <a href="servicios.html" data-page="servicios.html">Servicios</a>
+    <a href="nosotros.html" data-page="nosotros.html">Nosotros</a>
+    <a href="cotizador.html" data-page="cotizador.html">Cotizador</a>
+    <a href="sobre-david.html" data-page="sobre-david.html">Sobre David</a>
+    <a href="contacto.html" data-page="contacto.html" class="btn btn-blue">Contactar a David</a>
+  </div>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="wrap sec-head reveal">
+    <span class="pill"><span class="dot"></span>Contacto directo</span>
+    <h2>Hablemos de tu <span class="grad">próximo proyecto</span></h2>
+    <p>Ponte en contacto directo con David para cotizar, resolver dudas o comenzar el desarrollo de tu sitio web de inmediato.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="contact-grid">
+      <form class="panel contact-form reveal" id="contact-form">
+        <div class="field">
+          <label for="contact-name">Tu nombre</label>
+          <input type="text" id="contact-name" required placeholder="Ej. Carlos Mendoza" autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="contact-service">Servicio de interés</label>
+          <select id="contact-service">
+            <option value="Creación de Página Web">Creación de Página Web</option>
+            <option value="Publicidad de Todo Tipo">Publicidad de Todo Tipo</option>
+            <option value="Mantenimiento de Página Web">Mantenimiento de Página Web</option>
+            <option value="Proyecto Personalizado">Proyecto Personalizado</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="contact-msg">Detalles o mensaje</label>
+          <textarea id="contact-msg" rows="4" required placeholder="Describe brevemente lo que necesita tu negocio..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-blue btn-lg btn-block">Enviar mensaje directo <svg class="ic" data-i="send"></svg></button>
+      </form>
+
+      <div class="contact-cards stagger">
+        <a class="ccard wa reveal" href="https://wa.me/573105120977" target="_blank" rel="noopener">
+          <div class="icon-box" style="--rgb:34,197,94"><svg class="ic" data-i="message-square"></svg></div>
+          <div><h4>WhatsApp directo con David</h4><p>Atención rápida e inmediata por chat.</p></div>
+        </a>
+        <a class="ccard ph reveal" href="tel:+573105120977">
+          <div class="icon-box" style="--rgb:59,130,246"><svg class="ic" data-i="phone"></svg></div>
+          <div><h4>Llamar a David</h4><p>+57 310 512 0977 · Toca para llamar</p></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ PIE DE PÁGINA ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <a href="index.html" class="brand">
+        <img src="logo.png" class="logo-img" alt="MT Service">
+        <div><b>MT Service</b><small>BY DAVID</small></div>
+      </a>
+      <nav class="foot-links">
+        <a href="servicios.html">Servicios</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="cotizador.html">Cotizador</a>
+        <a href="sobre-david.html">Sobre David</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <a href="https://wa.me/573105120977" target="_blank" rel="noopener" class="btn btn-ghost">Escribir por WhatsApp <svg class="ic" data-i="arrow-right"></svg></a>
+    </div>
+    <div class="copy">© <span id="year">2026</span> MT Service · Diseño web, publicidad y mantenimiento por David.</div>
+  </div>
+</footer>
+
+<!-- ============ REPRODUCTOR ============ -->
+<div class="dock" role="region" aria-label="Reproductor de música">
+  <button class="dock-play" id="btn-play" title="Reproducir / Pausar" aria-label="Reproducir o pausar" onclick="toggleAudio()">
+    <svg class="ic" id="btn-play-icon" data-i="pause" style="fill:currentColor;stroke-width:1.5"></svg>
+  </button>
+  <div class="dock-info">
+    <b>TRUENO</b>
+    <small>Audio cinemático · <span id="player-status">PAUSADO</span></small>
+  </div>
+  <div class="eq" aria-hidden="true"><i id="eq1"></i><i id="eq2"></i><i id="eq3"></i><i id="eq4"></i><i id="eq5"></i><i id="eq6"></i></div>
+  <div class="vol">
+    <button class="vbtn" onclick="toggleMute()" id="btn-mute" title="Silenciar / Activar sonido" aria-label="Silenciar"><svg class="ic" id="icon-mute" data-i="volume-2"></svg></button>
+    <button class="vbtn" onclick="decreaseVolume()" title="Bajar volumen (-10%)" aria-label="Bajar volumen"><svg class="ic" data-i="minus"></svg></button>
+    <input id="volume-slider" type="range" min="0" max="100" step="1" value="70" oninput="changeVolume(this.value)" aria-label="Volumen">
+    <button class="vbtn" onclick="increaseVolume()" title="Subir volumen (+10%)" aria-label="Subir volumen"><svg class="ic" data-i="plus"></svg></button>
+    <span id="volume-display">70%</span>
+  </div>
+</div>
+
+<audio id="bg-music" preload="auto">
+  <source src="TRUENO.mp3" type="audio/mpeg">
+  <source src="trueno.mp3" type="audio/mpeg">
+  <source src="Trueno.mp3" type="audio/mpeg">
+  <source src="TRUENO.MP3" type="audio/mpeg">
+  <source src="trueno.m4a" type="audio/mp4">
+  <source src="trueno.ogg" type="audio/ogg">
+  <source src="trueno.wav" type="audio/wav">
+</audio>
+
+<script src="app.js"></script>
+</body>
+</html>

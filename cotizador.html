@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#040918">
+<meta name="description" content="Cotiza tu página web en 3 pasos y envía el resumen a David por WhatsApp.">
+<title>Cotizador | MT Service</title>
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<!-- ============ ENCABEZADO ============ -->
+<header class="header" id="header">
+  <div class="nav">
+    <a href="index.html" class="brand">
+      <img src="logo.png" class="logo-img" alt="MT Service">
+      <div><b>MT Service</b><small>BY DAVID</small></div>
+    </a>
+    <nav class="nav-links" id="navlinks">
+      <a href="index.html" data-page="index.html">Inicio</a>
+      <a href="servicios.html" data-page="servicios.html">Servicios</a>
+      <a href="nosotros.html" data-page="nosotros.html">Nosotros</a>
+      <a href="cotizador.html" data-page="cotizador.html">Cotizador</a>
+      <a href="sobre-david.html" data-page="sobre-david.html">Sobre David</a>
+      <a href="contacto.html" data-page="contacto.html">Contacto</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="cotizador.html" class="btn btn-ghost">Cotizar proyecto <svg class="ic" data-i="arrow-right"></svg></a>
+      <button class="burger" id="burger" aria-label="Abrir menú"><svg class="ic" data-i="menu"></svg></button>
+    </div>
+  </div>
+  <div class="mnav" id="mobile-menu">
+    <a href="index.html" data-page="index.html">Inicio</a>
+    <a href="servicios.html" data-page="servicios.html">Servicios</a>
+    <a href="nosotros.html" data-page="nosotros.html">Nosotros</a>
+    <a href="cotizador.html" data-page="cotizador.html">Cotizador</a>
+    <a href="sobre-david.html" data-page="sobre-david.html">Sobre David</a>
+    <a href="contacto.html" data-page="contacto.html" class="btn btn-blue">Contactar a David</a>
+  </div>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="wrap sec-head reveal">
+    <span class="pill"><span class="dot"></span>Estimación inmediata</span>
+    <h2>Arma tu cotización <span class="grad">en 3 pasos</span></h2>
+    <p>Elige el tipo de sitio, añade lo que necesitas y envía el resumen directo a David por WhatsApp.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="quote-grid">
+      <div>
+        <div class="panel reveal">
+          <div class="step-head"><span class="num">1</span><h3>Tipo de página web</h3></div>
+          <div class="opts">
+            <label class="opt">
+              <input type="radio" name="calc-web" value="80" data-label="Landing Page" checked>
+              <div class="box">
+                <svg class="ic" data-i="layout"></svg>
+                <strong>Landing Page</strong>
+                <p>Una sola página enfocada en vender o captar clientes.</p>
+                <div class="price">$80 USD</div>
+              </div>
+            </label>
+            <label class="opt">
+              <input type="radio" name="calc-web" value="150" data-label="Sitio Negocio / PyME">
+              <div class="box">
+                <svg class="ic" data-i="globe"></svg>
+                <strong>Sitio Negocio / PyME</strong>
+                <p>Varias secciones con presencia completa para tu empresa.</p>
+                <div class="price">$150 USD</div>
+              </div>
+            </label>
+            <label class="opt">
+              <input type="radio" name="calc-web" value="250" data-label="Tienda E-Commerce">
+              <div class="box">
+                <svg class="ic" data-i="shopping-cart"></svg>
+                <strong>Tienda E-Commerce</strong>
+                <p>Catálogo de productos y venta en línea.</p>
+                <div class="price">$250 USD</div>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="panel reveal">
+          <div class="step-head"><span class="num">2</span><h3>Tus datos <small>(opcional)</small></h3></div>
+          <div class="fields">
+            <div class="field">
+              <label for="calc-name">Tu nombre</label>
+              <input type="text" id="calc-name" placeholder="Ej. Carlos Mendoza" autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="calc-business">Nombre de tu negocio</label>
+              <input type="text" id="calc-business" placeholder="Ej. Panadería La Esquina">
+            </div>
+          </div>
+        </div>
+
+        <div class="panel reveal">
+          <div class="step-head"><span class="num">3</span><h3>Servicios adicionales</h3></div>
+          <label class="addon" id="addon-ads">
+            <input type="checkbox" id="calc-add-ads">
+            <span class="check"><svg class="ic" data-i="check"></svg></span>
+            <span class="txt"><strong>Paquete de Publicidad Digital</strong><span>Diseño de anuncios y estrategias para redes.</span></span>
+            <b>+$40 USD</b>
+          </label>
+          <label class="addon" id="addon-maint">
+            <input type="checkbox" id="calc-add-maint">
+            <span class="check"><svg class="ic" data-i="check"></svg></span>
+            <span class="txt"><strong>Plan de Mantenimiento Mensual</strong><span>Soporte técnico, respaldos y actualizaciones.</span></span>
+            <b>+$25 USD/mes</b>
+          </label>
+        </div>
+      </div>
+
+      <aside class="summary reveal">
+        <h3>Resumen del proyecto</h3>
+        <ul id="calc-breakdown"></ul>
+        <div class="meta">
+          <div><small>Entrega estimada</small><b id="calc-time-estimate" style="color:#7dd3fc">3 a 5 Días Hábiles</b></div>
+          <div><small>Pago</small><b>Según acuerdo</b></div>
+        </div>
+        <div class="total">
+          <small>Total estimado</small>
+          <div id="calc-total-price" class="grad-blue">$80 USD</div>
+          <p>Precio referencial. David confirma el valor final según tu proyecto.</p>
+        </div>
+        <button id="btn-send-quote" class="btn btn-wa btn-lg btn-block">
+          <svg class="ic" data-i="message-circle"></svg><span>Enviar cotización por WhatsApp</span>
+        </button>
+      </aside>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ PIE DE PÁGINA ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <a href="index.html" class="brand">
+        <img src="logo.png" class="logo-img" alt="MT Service">
+        <div><b>MT Service</b><small>BY DAVID</small></div>
+      </a>
+      <nav class="foot-links">
+        <a href="servicios.html">Servicios</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="cotizador.html">Cotizador</a>
+        <a href="sobre-david.html">Sobre David</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <a href="https://wa.me/573105120977" target="_blank" rel="noopener" class="btn btn-ghost">Escribir por WhatsApp <svg class="ic" data-i="arrow-right"></svg></a>
+    </div>
+    <div class="copy">© <span id="year">2026</span> MT Service · Diseño web, publicidad y mantenimiento por David.</div>
+  </div>
+</footer>
+
+<!-- ============ REPRODUCTOR ============ -->
+<div class="dock" role="region" aria-label="Reproductor de música">
+  <button class="dock-play" id="btn-play" title="Reproducir / Pausar" aria-label="Reproducir o pausar" onclick="toggleAudio()">
+    <svg class="ic" id="btn-play-icon" data-i="pause" style="fill:currentColor;stroke-width:1.5"></svg>
+  </button>
+  <div class="dock-info">
+    <b>TRUENO</b>
+    <small>Audio cinemático · <span id="player-status">PAUSADO</span></small>
+  </div>
+  <div class="eq" aria-hidden="true"><i id="eq1"></i><i id="eq2"></i><i id="eq3"></i><i id="eq4"></i><i id="eq5"></i><i id="eq6"></i></div>
+  <div class="vol">
+    <button class="vbtn" onclick="toggleMute()" id="btn-mute" title="Silenciar / Activar sonido" aria-label="Silenciar"><svg class="ic" id="icon-mute" data-i="volume-2"></svg></button>
+    <button class="vbtn" onclick="decreaseVolume()" title="Bajar volumen (-10%)" aria-label="Bajar volumen"><svg class="ic" data-i="minus"></svg></button>
+    <input id="volume-slider" type="range" min="0" max="100" step="1" value="70" oninput="changeVolume(this.value)" aria-label="Volumen">
+    <button class="vbtn" onclick="increaseVolume()" title="Subir volumen (+10%)" aria-label="Subir volumen"><svg class="ic" data-i="plus"></svg></button>
+    <span id="volume-display">70%</span>
+  </div>
+</div>
+
+<audio id="bg-music" preload="auto">
+  <source src="TRUENO.mp3" type="audio/mpeg">
+  <source src="trueno.mp3" type="audio/mpeg">
+  <source src="Trueno.mp3" type="audio/mpeg">
+  <source src="TRUENO.MP3" type="audio/mpeg">
+  <source src="trueno.m4a" type="audio/mp4">
+  <source src="trueno.ogg" type="audio/ogg">
+  <source src="trueno.wav" type="audio/wav">
+</audio>
+
+<script src="app.js"></script>
+</body>
+</html>
